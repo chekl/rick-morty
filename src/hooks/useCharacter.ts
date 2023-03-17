@@ -1,9 +1,8 @@
 import { useMemo } from 'react';
 
-export const useCharacter = (characters: any[], filter: string) => {
-  const sortedCharacters = useMemo(() => {
-    return characters.name.toLowerCase().includes(filter.toLowerCase());
-  }, [filter, character]);
-
+export const useCharacter = (characters: any[], search: string) => {
+  const sortedCharacters = useMemo(() => characters.filter((character) => {
+    return character.name.toLowerCase().includes(search.toLowerCase());
+  }), [search, characters]);
   return sortedCharacters;
 };

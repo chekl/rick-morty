@@ -1,10 +1,15 @@
 import React from 'react'
 
-export default function InfoItem() {
+type Props= {
+  option: string,
+  value: string,
+}
+
+export default function InfoItem({option, value}: Props) {
   return (
     <div>
-      <p></p>
-      <p></p>
+      <p>{option}</p>
+      <p>{value}</p>
       <hr/>
     </div>
   )

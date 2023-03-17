@@ -6,7 +6,7 @@ import Wrapper from './components/Wrapper/Wrapper';
 
 import { store } from './store/store';
 
-import "./index.css"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root') as Element | DocumentFragment);
 root.render(

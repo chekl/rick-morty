@@ -8,7 +8,7 @@ export const fetchData = createAsyncThunk('characters/fetchData', async () => {
         'Content-Type': 'application/json' 
     }
   }).then(response => response.json())
-  .then(data => data)
+  .then(data => data.results)
 })
 
 interface CharacterState {

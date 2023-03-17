@@ -1,4 +1,4 @@
-import React, {lazy} from "react";
+import React, {lazy, Suspense} from "react";
 import {
     BrowserRouter as Router,
     useRoutes,
@@ -29,9 +29,12 @@ const Element = () => {
 
 const Wrapper = () => {
     return (
-        <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+         <Router>
           <Element/>
         </Router>
+      </Suspense>
+       
     );
 }
 
