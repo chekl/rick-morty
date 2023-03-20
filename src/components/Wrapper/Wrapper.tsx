@@ -5,7 +5,6 @@ import {
   } from "react-router-dom";
 
 import HomePage from "../../Pages/HomePage";
-const LoginPage = lazy(() => import('../../Pages/LoginPage'));
 const CharacterPage = lazy(() => import("../../Pages/CharacterPage"))
 
 const Element = () => {
@@ -13,10 +12,6 @@ const Element = () => {
       {
         path: "/",
         element: <HomePage />,
-      },
-      {
-        path: "/login",
-        element: <LoginPage />,
       },
       { 
         path: ":id", 
