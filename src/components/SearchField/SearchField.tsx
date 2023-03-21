@@ -1,6 +1,6 @@
 import React, {Dispatch, useEffect} from 'react';
 
-import SearchIcon from '@mui/icons-material/Search';
+import './SearchField.scss'
 
 type Props = {
   search: string,
@@ -21,11 +21,8 @@ export default function SearchField ({search, setSearch}:Props) {
   }, [search]);
 
   return (
-<div>
-  <SearchIcon />
-  <input type="search" placeholder='Filter by name...'  value={search}
-        onChange={ (event) => setSearch(event.target.value)}/>
-</div>
+  <input className='search-bar' placeholder='Filter by name...'  value={search}
+       type='text' onChange={ (event) => setSearch(event.target.value)}/>
   )
 }
 

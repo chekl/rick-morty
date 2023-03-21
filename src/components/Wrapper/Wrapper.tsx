@@ -4,8 +4,8 @@ import {
     useRoutes,
   } from "react-router-dom";
 
-import HomePage from "../../Pages/HomePage";
-const CharacterPage = lazy(() => import("../../Pages/CharacterPage"))
+import HomePage from "../../Pages/HomePage/HomePage";
+const CharacterPage = lazy(() => import("../../Pages/CharacterPage/CharacterPage"))
 
 const Element = () => {
     let element = useRoutes([

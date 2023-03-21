@@ -1,0 +1,16 @@
+@use '../../styles/vars';
+
+.logo-container {
+    display: block;
+    margin: 1rem auto;
+    min-width: vars.$width-sm;
+    max-width: 600px;
+    max-height: 200px;
+    min-height: 100px;
+  }
+  
+  .logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }

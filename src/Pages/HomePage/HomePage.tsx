@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from "react";
 
-import SearchField from "../components/SearchField/SearchField"
-import CharacterList from '../components/CharacterList/CharacterList';
+import SearchField from "../../components/SearchField/SearchField"
+import CharacterList from '../../components/CharacterList/CharacterList';
+import Logo from "../../components/Logo/Logo";
+import "./HomePage.scss"
 
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch } from "../store/store";
-import { selectStatus, selectAll, fetchData } from "../store/characters";
-import { useCharacter } from "../hooks/useCharacter";
+import { AppDispatch } from "../../store/store";
+import { selectStatus, selectAll, fetchData } from "../../store/characters";
+import { useCharacter } from "../../hooks/useCharacter";
 
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 
@@ -59,15 +61,19 @@ const logOut = () => {
 
   return (
     <div>
-      {isLogining ? (
-                <button onClick={() => logOut()}>Logout</button>
-            ) : (
-                <button onClick={() => login()}>Login by Google</button>
-            )}
-    
-      <img src="RickMortyLogo.svg" alt="Rick and Morty Logo"/>
-      <SearchField setSearch={setSearch} search={search}/>
-      <CharacterList sortedCharacters={sortedCharacters}/>
+      <div>
+      {isLogining 
+      ? <button className='log-button' onClick={() => logOut()}>Logout</button>
+      : <button className='log-button' onClick={() => login()}>Login by Google</button>
+            }
+            </div>
+      <Logo/>
+
+        <div className="container">
+<SearchField setSearch={setSearch} search={search}/>
+      <CharacterList sortedCharacters={sortedCharacters}/> 
+        </div>
+      
     </div>
   );
 }

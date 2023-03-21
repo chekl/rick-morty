@@ -1,0 +1,13 @@
+@use '../../styles/vars';
+
+.link-back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    font-family: vars.$font-family-second;
+    font-weight: vars.$font-weight-lg;
+    font-size: 18px;
+    margin: 1rem;
+}

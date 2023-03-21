@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Card from "../Card/Card"
+import "./CharacterList.scss"
 
 /* type Props = {
   character: object,
@@ -23,7 +24,7 @@ export default function CharacterList({sortedCharacters}: any) {
         )
     }
     return (
-      <div>
+      <div className='character-list'>
         {sortedCharacters.map((character: any) =>{
           return <Card key={character.id} character={character}/>
         })

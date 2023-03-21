@@ -1,0 +1,21 @@
+@use '../../styles/vars';
+
+.character-info-h {
+    color: vars.$color-black-info;
+    font-weight: vars.$font-weight-lg;
+    font-size: vars.$font-size-sm;
+    font-family: vars.$font-family-primary;
+}
+
+.character-info-descr {
+    color: vars.$color-gray-descr;
+    font-weight: vars.$font-weight-sm;
+    font-size: vars.$font-size-xs;
+    font-family: vars.$font-family-primary;
+}
+
+.divider {
+    height: 1px;
+    mix-blend-mode: normal;
+    background: rgba(33, 33, 33, 0.08);;
+} 

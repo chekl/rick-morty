@@ -1,0 +1,30 @@
+@use '../../styles/vars';
+
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 20px;
+    margin: 2.5rem auto;
+    max-width: 1020px;
+    justify-content: center;
+    justify-items: center;
+}
+
+@media (max-width: (vars.$card-size * 4 - 1px)) {
+    .character-list {
+        grid-template-columns: repeat( 3, 1fr );
+    }
+}
+
+@media (max-width: (vars.$card-size * 3 - 1px)) {
+    .character-list {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+}
+
+
+@media (max-width: (vars.$card-size * 2 - 1px)) {
+    .character-list {
+        grid-template-columns: 1fr ;
+    }
+} 

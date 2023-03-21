@@ -1,0 +1,56 @@
+@use '../../styles/vars';
+
+.card-img {
+    height: 168px;
+    width: vars.$width-sm;
+    object-fit: cover;
+}
+
+.card { 
+    width: vars.$width-sm;
+    height: vars.$width-sm + 4px;
+}
+
+@media (max-width: (vars.$card-size * 3 - 1px)) {
+    .card { 
+        width: 312px;
+        height: 308px;
+    }
+
+    .card-img {
+        height: 232px;
+        width: 312px;
+    }
+}
+
+.card-font {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    font-family: vars.$font-family-primary;
+}
+
+.card-h {
+    margin: 0.5rem 1rem 0.2rem 1rem;
+    font-weight: vars.$font-weight-md;
+    font-size: vars.$font-size-md;
+    line-height: 30px;
+}
+
+.card-descr {
+    margin: 0 1rem;
+    color: vars.$color-black-primary;
+    font-size: vars.$font-size-xs;
+}
+
+.card-shadow {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+}
+
+.card-position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}

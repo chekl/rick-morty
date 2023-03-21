@@ -1,0 +1,37 @@
+@use '../../styles/vars';
+
+.character-name {
+    font-family: vars.$font-family-primary;
+    font-size: vars.$font-size-lg;
+}
+
+.character-container {
+    max-width: 300px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.character-img {
+    border: 5px solid vars.$color-white-info;
+    border-radius: 150px;
+    max-height: 300px;
+    min-height: 150px;
+}
+
+.character-info {
+    font-family: vars.$font-family-primary;
+    color: vars.$color-gray-info;
+    font-weight: vars.$font-weight-md;
+    font-size: vars.$font-size-md;
+}
+
+.character-info-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 415px;
+    min-width: vars.$width-md;
+}
+
