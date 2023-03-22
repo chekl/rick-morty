@@ -10,6 +10,15 @@
     justify-items: center;
 }
 
+.non-character-list {
+    font-family: vars.$font-family-primary;
+    font-size: vars.$font-size-lg;
+    font-weight: vars.$font-weight-md;
+    text-align: center;
+    margin: 2rem;
+    color: vars.$color-gray-info;
+}
+
 @media (max-width: (vars.$card-size * 4 - 1px)) {
     .character-list {
         grid-template-columns: repeat( 3, 1fr );
@@ -21,7 +30,6 @@
         grid-template-columns: repeat( 2, 1fr );
     }
 }
-
 
 @media (max-width: (vars.$card-size * 2 - 1px)) {
     .character-list {

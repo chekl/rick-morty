@@ -1,0 +1,19 @@
+@use '../../styles/vars';
+
+.logobar-container {
+    height: 58px;
+    display: flex;
+    margin: 0.5rem;
+}
+
+.log-text {
+    font-family: vars.$font-family-second;
+    font-weight: vars.$font-weight-lg;
+    font-size: 18px; 
+}
+
+.log-button {
+    border: none;
+    background-color: white;
+    
+}
